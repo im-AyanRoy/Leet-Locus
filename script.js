@@ -19,16 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Username should not be empty");
             return false;
         }
-        const regex = /^[a-zA-Z](?!.*[_.]{2})[a-zA-Z0-9._]{1,14}[a-zA-Z0-9]$/;
+        // const regex = /^[a-zA-Z0-9][a-zA-Z0-9-_]{3,15}[a-zA-Z0-9]$/;
         
         //this is the regular exp of leet code username we will match this format with the username we got from the user.
 
-        const isMatching=regex.test(username);
+        // const isMatching=regex.test(username);
 
-        if(isMatching==false){
-            alert("Invalid Username")
-        }
-        return isMatching;
+        // if(isMatching==false){
+        //     alert("Invalid Username")
+        // }
+        return true;
     }
 
     //calling the api thats why async function
@@ -140,6 +140,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
 })
-
 
 
