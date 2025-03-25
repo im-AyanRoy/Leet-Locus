@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Username should not be empty");
             return false;
         }
-        const regex = /^(?![-_])[a-zA-Z0-9-_]{4,15}(?<![-_])$/; 
+        const regex = /^[a-zA-Z](?!.*[_.]{2})[a-zA-Z0-9._]{1,14}[a-zA-Z0-9]$/;
         
         //this is the regular exp of leet code username we will match this format with the username we got from the user.
 
