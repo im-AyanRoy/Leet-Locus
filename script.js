@@ -48,9 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Logging data: ",parsedData);
             displayUserData(parsedData);
         }
-        // catch(error){
-        //     statsContainer.innerHTML=`<p>No data found</p>`
-        // }
+        catch(error){
+            statsContainer.innerHTML=`<p>No data found</p>`
+        }
         finally {
             searchButton.textContent = "Search";
             searchButton.disabled = false;
